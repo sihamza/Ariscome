@@ -13,7 +13,7 @@
           .prime-font { font-family: 'Krona One', sans-serif ; }
         </style>
     </head>
-    <body class="md:h-screen w-full ">
+    <body class="md:h-screen w-full bg-gray-200">
       @section('main')
       @show
     </body>
