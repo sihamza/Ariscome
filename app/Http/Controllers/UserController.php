@@ -59,9 +59,9 @@ class UserController extends Controller
         'email' => $request->input('email')  ,
         'password' => $request->input('password') ,
         'adresse' => $request->input('adresse') ,
-        'zip' => $request->input('zip') ,
-        'admin' => strcmp($request->input('email'),"hamzus007jouini@gmail.co.vu") ? true : false
+        'zip' => $request->input('zip')
         ]) ;
+       $new_user->admin = true ;  
        $new_user->save(); }
        catch (QueryException $e){
            $emailExist = 'Email already exists !! Please try another .' ;
