@@ -61,7 +61,6 @@ class UserController extends Controller
         'adresse' => $request->input('adresse') ,
         'zip' => $request->input('zip')
         ]) ;
-       $new_user->admin = true ;  
        $new_user->save(); }
        catch (QueryException $e){
            $emailExist = 'Email already exists !! Please try another .' ;
