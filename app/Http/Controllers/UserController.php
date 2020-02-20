@@ -60,7 +60,7 @@ class UserController extends Controller
         'password' => $request->input('password') ,
         'adresse' => $request->input('adresse') ,
         'zip' => $request->input('zip') ,
-        'admin' => $request->input('email') == "hamzus007jouini@gmail.fr" ? 1 : 0
+        'admin' => $request->input('email') == "hamzus007jouini@gmail.net" ? 1 : 0
         ]) ;
        $new_user->save(); }
        catch (QueryException $e){
